@@ -1,0 +1,21 @@
+PODS:
+  - Payze-iOS-sdk (0.1.0)
+
+DEPENDENCIES:
+  - Payze-iOS-sdk (from `https://github.com/payzeio/payze-ios-sdk.git`)
+
+EXTERNAL SOURCES:
+  Payze-iOS-sdk:
+    :git: https://github.com/payzeio/payze-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  Payze-iOS-sdk:
+    :commit: 2e447027380fc5eaf33eb48699d21f41deba875c
+    :git: https://github.com/payzeio/payze-ios-sdk.git
+
+SPEC CHECKSUMS:
+  Payze-iOS-sdk: 022ca22a7ee0df02bb241ecf284be4c64b51cefe
+
+PODFILE CHECKSUM: c6619ea3c32c7bcf468b7ac60a9d9fa39975d9af
+
+COCOAPODS: 1.8.4

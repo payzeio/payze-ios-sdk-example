@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0659F80610FFE5EC8405F64654A94EFB /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9CB98D826ED32859033818DA9A7B5E /* PaymentDetails.swift */; };
+		2B1789BF1357E5F5282E58E12C33CB11 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994B776CBA1BB944C891FD2DB23BF8EF /* WebController.swift */; };
+		3865416414CB41720604F51F83CD2A5B /* PaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E966CCC2A6A49E5CD0805E623EA7A0A /* PaymentService.swift */; };
+		39E83AFCCF3A460FDC8199D399178CB4 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB19E28BFF31E3BC8C1898A5DCBA522D /* HTTPRequest.swift */; };
+		3CDE61441BC235AFBCF7E10590F08A2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3FA9E24FA36FE5BF601DFBFCEDD64067 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		45FDF4704CE2AFA800E2B6D737D9EF81 /* StartPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77725463B89915CDBEF46B6F1331DF9B /* StartPaymentResponse.swift */; };
+		5345013828CF75301679DC42F53A7D7A /* CheckTransactionStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C62DDAF1642945FE1F2C9A4A6B1DA /* CheckTransactionStatusResponse.swift */; };
+		5FF45D3E8896DFCC7828DF245471A95A /* Payze-iOS-sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 643E7D864DAC9DCC262EAD28AD3CF308 /* Payze-iOS-sdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F57533439F02BAB01BF4BA9C81F1D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA05218B017A2136D18B48B5ED60FDF4 /* Assets.xcassets */; };
+		A4F6BBB9B508E73E377840017388007F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FC43E7F638B09868FC0A01CF6A5CA /* AppDelegate.swift */; };
+		A76B6EEF954FA36025B1E9BC22AB11B4 /* TwoFAResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B272D8E61438F516E6C1E3A5D2AA4B /* TwoFAResponse.swift */; };
+		AB22EB24949BFE008C06985BE68B7F49 /* Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA929380A6C7B2A25990FF8F1B7DFB8 /* Encoding.swift */; };
+		AD499BE89ABD91147BCEF8406BBC1DFE /* HTTPNetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80B231F23B4646F648CE7086E8AA21C /* HTTPNetworkResponse.swift */; };
+		C4419A51229CF70116C3B700EBA0A70E /* Pods-payze-ios-sdk-example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 474DCEF01E6CF061EE63185601949FF1 /* Pods-payze-ios-sdk-example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC3C63C34A62A752FB243827FC5F7170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF850BCDFFDDD89C037EDFA92E691A /* ViewController.swift */; };
+		D2E345F9054150240F20C2FDF231CD83 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB99810E856878681789F9CF82D0D4CE /* HTTPError.swift */; };
+		DCB2A6597A900D3510DC2E2B020E4122 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = A898DC68F028ED51BC69DEBD1B89C400 /* Method.swift */; };
+		F577E877ED802838C7459A8C969100FF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A18A030C1C343AEDC012DF90ECB38 /* Route.swift */; };
+		F7E9D3554790F065ACC9EF4237DE7424 /* Payze-iOS-sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 669EC301D93EA6F4B734DD268418E792 /* Payze-iOS-sdk-dummy.m */; };
+		FBD8840E2BCF5E9F7B463DCF296CB9C4 /* Pods-payze-ios-sdk-example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1DEB5612B3F225815B9497263B721A /* Pods-payze-ios-sdk-example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0671BEE45AA9EFF9546F8AA7546CE4B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E117D82B85687DDCC67348FECDA138B6;
+			remoteInfo = "Payze-iOS-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		054CA42057CDCEF42A019562781DD1FE /* Pods-payze-ios-sdk-example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-payze-ios-sdk-example.modulemap"; sourceTree = "<group>"; };
+		0A0D6B3A199E900828ADA83ABC878DE2 /* Payze_iOS_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Payze_iOS_sdk.framework; path = "Payze-iOS-sdk.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E8802F444BFD57E4AE4E966AF080CE1 /* Pods_payze_ios_sdk_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_payze_ios_sdk_example.framework; path = "Pods-payze-ios-sdk-example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3FC43E7F638B09868FC0A01CF6A5CA /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Payze-iOS-App/AppDelegate.swift"; sourceTree = "<group>"; };
+		1D438C6504CF50F25F3E24C9E820B7BE /* Payze-iOS-sdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Payze-iOS-sdk-prefix.pch"; sourceTree = "<group>"; };
+		2CDF850BCDFFDDD89C037EDFA92E691A /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Payze-iOS-App/ViewController.swift"; sourceTree = "<group>"; };
+		2F1DEB5612B3F225815B9497263B721A /* Pods-payze-ios-sdk-example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-payze-ios-sdk-example-dummy.m"; sourceTree = "<group>"; };
+		3E966CCC2A6A49E5CD0805E623EA7A0A /* PaymentService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentService.swift; path = "Payze-iOS-App/Services/PaymentService.swift"; sourceTree = "<group>"; };
+		474DCEF01E6CF061EE63185601949FF1 /* Pods-payze-ios-sdk-example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-payze-ios-sdk-example-umbrella.h"; sourceTree = "<group>"; };
+		4CA929380A6C7B2A25990FF8F1B7DFB8 /* Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoding.swift; path = "Payze-iOS-App/Encoding/Encoding.swift"; sourceTree = "<group>"; };
+		508EE4D3199C187D5710F7916CD26779 /* Pods-payze-ios-sdk-example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-payze-ios-sdk-example-acknowledgements.plist"; sourceTree = "<group>"; };
+		643E7D864DAC9DCC262EAD28AD3CF308 /* Payze-iOS-sdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Payze-iOS-sdk-umbrella.h"; sourceTree = "<group>"; };
+		669EC301D93EA6F4B734DD268418E792 /* Payze-iOS-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Payze-iOS-sdk-dummy.m"; sourceTree = "<group>"; };
+		6CD950463D7DF019CF9FA4646331F240 /* Payze-iOS-sdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Payze-iOS-sdk-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77725463B89915CDBEF46B6F1331DF9B /* StartPaymentResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StartPaymentResponse.swift; path = "Payze-iOS-App/Models/StartPaymentResponse.swift"; sourceTree = "<group>"; };
+		8503C08D466ECF0419630A5640E548B3 /* Pods-payze-ios-sdk-example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-payze-ios-sdk-example-Info.plist"; sourceTree = "<group>"; };
+		8A9CB98D826ED32859033818DA9A7B5E /* PaymentDetails.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaymentDetails.swift; path = "Payze-iOS-App/Models/PaymentDetails.swift"; sourceTree = "<group>"; };
+		963F4643A44F057D73BC09D98BB2BC34 /* Pods-payze-ios-sdk-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-payze-ios-sdk-example.debug.xcconfig"; sourceTree = "<group>"; };
+		994B776CBA1BB944C891FD2DB23BF8EF /* WebController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebController.swift; path = "Payze-iOS-App/WebController.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A898DC68F028ED51BC69DEBD1B89C400 /* Method.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Method.swift; path = "Payze-iOS-App/HTTP/Method.swift"; sourceTree = "<group>"; };
+		AD1C62DDAF1642945FE1F2C9A4A6B1DA /* CheckTransactionStatusResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckTransactionStatusResponse.swift; path = "Payze-iOS-App/Models/CheckTransactionStatusResponse.swift"; sourceTree = "<group>"; };
+		BA05218B017A2136D18B48B5ED60FDF4 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Payze-iOS-App/Assets.xcassets"; sourceTree = "<group>"; };
+		CC0AB691DBCD2196A4420A39526F6F26 /* Payze-iOS-sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Payze-iOS-sdk.modulemap"; sourceTree = "<group>"; };
+		D004970A985483ECBFC74408FE3F2904 /* Payze-iOS-sdk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Payze-iOS-sdk.xcconfig"; sourceTree = "<group>"; };
+		D63A18A030C1C343AEDC012DF90ECB38 /* Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Route.swift; path = "Payze-iOS-App/HTTP/Route.swift"; sourceTree = "<group>"; };
+		D80B231F23B4646F648CE7086E8AA21C /* HTTPNetworkResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPNetworkResponse.swift; path = "Payze-iOS-App/HTTP/HTTPNetworkResponse.swift"; sourceTree = "<group>"; };
+		D81F23CACCE9F596EACB58D5AE1C9FA8 /* Pods-payze-ios-sdk-example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-payze-ios-sdk-example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB19E28BFF31E3BC8C1898A5DCBA522D /* HTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRequest.swift; path = "Payze-iOS-App/HTTP/HTTPRequest.swift"; sourceTree = "<group>"; };
+		E55D646AF654EFD17A98FFAA592AE55F /* Pods-payze-ios-sdk-example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-payze-ios-sdk-example-frameworks.sh"; sourceTree = "<group>"; };
+		F58A1196DBE6F3B15B0DC7C518C54092 /* Pods-payze-ios-sdk-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-payze-ios-sdk-example.release.xcconfig"; sourceTree = "<group>"; };
+		F8B272D8E61438F516E6C1E3A5D2AA4B /* TwoFAResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TwoFAResponse.swift; path = "Payze-iOS-App/Models/TwoFAResponse.swift"; sourceTree = "<group>"; };
+		FB99810E856878681789F9CF82D0D4CE /* HTTPError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPError.swift; path = "Payze-iOS-App/HTTP/HTTPError.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27836CF61882EA758A2F134EA8F28985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDE61441BC235AFBCF7E10590F08A2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87A7463032AB17C50CD56D29EE6675DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA9E24FA36FE5BF601DFBFCEDD64067 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B4772E2285AA1B95A47EB7E8D6C3C70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC0AB691DBCD2196A4420A39526F6F26 /* Payze-iOS-sdk.modulemap */,
+				D004970A985483ECBFC74408FE3F2904 /* Payze-iOS-sdk.xcconfig */,
+				669EC301D93EA6F4B734DD268418E792 /* Payze-iOS-sdk-dummy.m */,
+				6CD950463D7DF019CF9FA4646331F240 /* Payze-iOS-sdk-Info.plist */,
+				1D438C6504CF50F25F3E24C9E820B7BE /* Payze-iOS-sdk-prefix.pch */,
+				643E7D864DAC9DCC262EAD28AD3CF308 /* Payze-iOS-sdk-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Payze-iOS-sdk";
+			sourceTree = "<group>";
+		};
+		2E8B211CE842F65A53EF11D5F13DBDE9 /* Payze-iOS-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				1C3FC43E7F638B09868FC0A01CF6A5CA /* AppDelegate.swift */,
+				AD1C62DDAF1642945FE1F2C9A4A6B1DA /* CheckTransactionStatusResponse.swift */,
+				4CA929380A6C7B2A25990FF8F1B7DFB8 /* Encoding.swift */,
+				FB99810E856878681789F9CF82D0D4CE /* HTTPError.swift */,
+				D80B231F23B4646F648CE7086E8AA21C /* HTTPNetworkResponse.swift */,
+				DB19E28BFF31E3BC8C1898A5DCBA522D /* HTTPRequest.swift */,
+				A898DC68F028ED51BC69DEBD1B89C400 /* Method.swift */,
+				8A9CB98D826ED32859033818DA9A7B5E /* PaymentDetails.swift */,
+				3E966CCC2A6A49E5CD0805E623EA7A0A /* PaymentService.swift */,
+				D63A18A030C1C343AEDC012DF90ECB38 /* Route.swift */,
+				77725463B89915CDBEF46B6F1331DF9B /* StartPaymentResponse.swift */,
+				F8B272D8E61438F516E6C1E3A5D2AA4B /* TwoFAResponse.swift */,
+				2CDF850BCDFFDDD89C037EDFA92E691A /* ViewController.swift */,
+				994B776CBA1BB944C891FD2DB23BF8EF /* WebController.swift */,
+				4F266D4D117A69C471E52A472495C88C /* Resources */,
+				2B4772E2285AA1B95A47EB7E8D6C3C70 /* Support Files */,
+			);
+			name = "Payze-iOS-sdk";
+			path = "Payze-iOS-sdk";
+			sourceTree = "<group>";
+		};
+		4C35A99E031E3E1E320B7EB630303926 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E8B211CE842F65A53EF11D5F13DBDE9 /* Payze-iOS-sdk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F266D4D117A69C471E52A472495C88C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA05218B017A2136D18B48B5ED60FDF4 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A44A3717E01B2672FA595187F7936A51 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A799DC8E9D654A7C5F4C73BD3496F7C8 /* Pods-payze-ios-sdk-example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A724933657242FE13166976A524DC1FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0D6B3A199E900828ADA83ABC878DE2 /* Payze_iOS_sdk.framework */,
+				0E8802F444BFD57E4AE4E966AF080CE1 /* Pods_payze_ios_sdk_example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A799DC8E9D654A7C5F4C73BD3496F7C8 /* Pods-payze-ios-sdk-example */ = {
+			isa = PBXGroup;
+			children = (
+				054CA42057CDCEF42A019562781DD1FE /* Pods-payze-ios-sdk-example.modulemap */,
+				D81F23CACCE9F596EACB58D5AE1C9FA8 /* Pods-payze-ios-sdk-example-acknowledgements.markdown */,
+				508EE4D3199C187D5710F7916CD26779 /* Pods-payze-ios-sdk-example-acknowledgements.plist */,
+				2F1DEB5612B3F225815B9497263B721A /* Pods-payze-ios-sdk-example-dummy.m */,
+				E55D646AF654EFD17A98FFAA592AE55F /* Pods-payze-ios-sdk-example-frameworks.sh */,
+				8503C08D466ECF0419630A5640E548B3 /* Pods-payze-ios-sdk-example-Info.plist */,
+				474DCEF01E6CF061EE63185601949FF1 /* Pods-payze-ios-sdk-example-umbrella.h */,
+				963F4643A44F057D73BC09D98BB2BC34 /* Pods-payze-ios-sdk-example.debug.xcconfig */,
+				F58A1196DBE6F3B15B0DC7C518C54092 /* Pods-payze-ios-sdk-example.release.xcconfig */,
+			);
+			name = "Pods-payze-ios-sdk-example";
+			path = "Target Support Files/Pods-payze-ios-sdk-example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4C35A99E031E3E1E320B7EB630303926 /* Pods */,
+				A724933657242FE13166976A524DC1FD /* Products */,
+				A44A3717E01B2672FA595187F7936A51 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4488E162E195FA1714D89D0FE2E7175C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF45D3E8896DFCC7828DF245471A95A /* Payze-iOS-sdk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD41B6A01098174D51F094E01F3765A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4419A51229CF70116C3B700EBA0A70E /* Pods-payze-ios-sdk-example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C107AA40FB8CD432322C6CF88AD2F9A5 /* Pods-payze-ios-sdk-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3E83EB2D00A33F2F86ADA1CC7663870 /* Build configuration list for PBXNativeTarget "Pods-payze-ios-sdk-example" */;
+			buildPhases = (
+				FBD41B6A01098174D51F094E01F3765A /* Headers */,
+				C95C2D7E4E16163F4307F1527D5ED247 /* Sources */,
+				87A7463032AB17C50CD56D29EE6675DF /* Frameworks */,
+				A23ECDE50417599A1B81CC23CC45C9BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C121F46D9EB6FEFA97566C953010C69C /* PBXTargetDependency */,
+			);
+			name = "Pods-payze-ios-sdk-example";
+			productName = "Pods-payze-ios-sdk-example";
+			productReference = 0E8802F444BFD57E4AE4E966AF080CE1 /* Pods_payze_ios_sdk_example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E117D82B85687DDCC67348FECDA138B6 /* Payze-iOS-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DEF514D429A50C52D7B67AE6A6F4EAE /* Build configuration list for PBXNativeTarget "Payze-iOS-sdk" */;
+			buildPhases = (
+				4488E162E195FA1714D89D0FE2E7175C /* Headers */,
+				3164CD991B6051AD51423855FBCADA1D /* Sources */,
+				27836CF61882EA758A2F134EA8F28985 /* Frameworks */,
+				C4DDC92A8E81C1BFD3F51F1983ED5329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Payze-iOS-sdk";
+			productName = "Payze-iOS-sdk";
+			productReference = 0A0D6B3A199E900828ADA83ABC878DE2 /* Payze_iOS_sdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A724933657242FE13166976A524DC1FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E117D82B85687DDCC67348FECDA138B6 /* Payze-iOS-sdk */,
+				C107AA40FB8CD432322C6CF88AD2F9A5 /* Pods-payze-ios-sdk-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A23ECDE50417599A1B81CC23CC45C9BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DDC92A8E81C1BFD3F51F1983ED5329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F57533439F02BAB01BF4BA9C81F1D8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3164CD991B6051AD51423855FBCADA1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F6BBB9B508E73E377840017388007F /* AppDelegate.swift in Sources */,
+				5345013828CF75301679DC42F53A7D7A /* CheckTransactionStatusResponse.swift in Sources */,
+				AB22EB24949BFE008C06985BE68B7F49 /* Encoding.swift in Sources */,
+				D2E345F9054150240F20C2FDF231CD83 /* HTTPError.swift in Sources */,
+				AD499BE89ABD91147BCEF8406BBC1DFE /* HTTPNetworkResponse.swift in Sources */,
+				39E83AFCCF3A460FDC8199D399178CB4 /* HTTPRequest.swift in Sources */,
+				DCB2A6597A900D3510DC2E2B020E4122 /* Method.swift in Sources */,
+				0659F80610FFE5EC8405F64654A94EFB /* PaymentDetails.swift in Sources */,
+				3865416414CB41720604F51F83CD2A5B /* PaymentService.swift in Sources */,
+				F7E9D3554790F065ACC9EF4237DE7424 /* Payze-iOS-sdk-dummy.m in Sources */,
+				F577E877ED802838C7459A8C969100FF /* Route.swift in Sources */,
+				45FDF4704CE2AFA800E2B6D737D9EF81 /* StartPaymentResponse.swift in Sources */,
+				A76B6EEF954FA36025B1E9BC22AB11B4 /* TwoFAResponse.swift in Sources */,
+				CC3C63C34A62A752FB243827FC5F7170 /* ViewController.swift in Sources */,
+				2B1789BF1357E5F5282E58E12C33CB11 /* WebController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95C2D7E4E16163F4307F1527D5ED247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBD8840E2BCF5E9F7B463DCF296CB9C4 /* Pods-payze-ios-sdk-example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C121F46D9EB6FEFA97566C953010C69C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Payze-iOS-sdk";
+			target = E117D82B85687DDCC67348FECDA138B6 /* Payze-iOS-sdk */;
+			targetProxy = 0671BEE45AA9EFF9546F8AA7546CE4B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1ECA0555EE0836E3B5FFB136EEBE1F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3490E9E6CDA05DA40D65040038A27B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963F4643A44F057D73BC09D98BB2BC34 /* Pods-payze-ios-sdk-example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-payze-ios-sdk-example/Pods-payze-ios-sdk-example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-payze-ios-sdk-example/Pods-payze-ios-sdk-example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75938036F10973512E24BAEC47D19CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F58A1196DBE6F3B15B0DC7C518C54092 /* Pods-payze-ios-sdk-example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-payze-ios-sdk-example/Pods-payze-ios-sdk-example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-payze-ios-sdk-example/Pods-payze-ios-sdk-example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C3D64790A0FE037697A0C2CDF06EBC03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C513264B9A519BA2A4DF9F7A6E6EF385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D004970A985483ECBFC74408FE3F2904 /* Payze-iOS-sdk.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Payze-iOS-sdk/Payze-iOS-sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Payze-iOS-sdk/Payze-iOS-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Payze-iOS-sdk/Payze-iOS-sdk.modulemap";
+				PRODUCT_MODULE_NAME = Payze_iOS_sdk;
+				PRODUCT_NAME = Payze_iOS_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA546B43914C0431E8D8830E9DDC6D31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D004970A985483ECBFC74408FE3F2904 /* Payze-iOS-sdk.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Payze-iOS-sdk/Payze-iOS-sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Payze-iOS-sdk/Payze-iOS-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Payze-iOS-sdk/Payze-iOS-sdk.modulemap";
+				PRODUCT_MODULE_NAME = Payze_iOS_sdk;
+				PRODUCT_NAME = Payze_iOS_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DEF514D429A50C52D7B67AE6A6F4EAE /* Build configuration list for PBXNativeTarget "Payze-iOS-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C513264B9A519BA2A4DF9F7A6E6EF385 /* Debug */,
+				FA546B43914C0431E8D8830E9DDC6D31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1ECA0555EE0836E3B5FFB136EEBE1F4E /* Debug */,
+				C3D64790A0FE037697A0C2CDF06EBC03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3E83EB2D00A33F2F86ADA1CC7663870 /* Build configuration list for PBXNativeTarget "Pods-payze-ios-sdk-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3490E9E6CDA05DA40D65040038A27B33 /* Debug */,
+				75938036F10973512E24BAEC47D19CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
